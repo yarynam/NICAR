@@ -57,6 +57,10 @@ h4 {
   text-align: center;
 }
 
+#country {
+  color:#31cfff;
+}
+
 img {
   margin:auto;
 }
@@ -159,7 +163,33 @@ svg {
   }
 
 
-@media only screen and (max-width: 601px) {
+  .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+@media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px) {
   #header{ margin-top: 1.5em;}
   #main-title {font-size: 4em;}
   .fact {border-left: none; margin-bottom: 7em;}

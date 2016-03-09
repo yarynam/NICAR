@@ -19,7 +19,7 @@
 <body>
   <section id="header" class="container-fluid">
     <div class="row">
-    <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-mg-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
       <h1 id="main-title"> NICAR 2016  </h1>
       <h3 class="center"> Nerd Data Journalists Summit</h3>
       <h4 class="center">| 10.03.2016 - 13.03.2016 |</h4>
@@ -37,12 +37,12 @@
       <div class="globe col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div id="globe" width="200" height="200"></div>
         <div id="participants" class="subtitle"></div>
-        <div id="country" class="subtitle"></div>
+        <div class="subtitle">from <span id="country"> </span></div>
       </div>
       <div class="fact col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img class="img-responsive" src="img/countries.svg"></img>
         <h2>22</h2>
-        <div class="subtitle"> Countries </div>
+        <div class="subtitle"> Countries represented</div>
       </div>
       <div class="fact col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img class="img-responsive" src="img/speaker.svg"></img>
@@ -85,7 +85,7 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
       <div class="jr-speechbubble">
-        <span> It's never too much coding, right?</span>
+        <span id="robospeech"> </span>
        </div>
        <a class="btn" href="http://www.ire.org/conferences/nicar2016/"> Visit NICAR</a>
     </div>
@@ -101,14 +101,23 @@
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script src="js/globe.js"></script>
   <script src="js/nicarminutes.js"></script>
+  <script src="js/typed.js"></script>
 
   <script>
 
-  nicarMinutes("#python", 2565, 800);
-  nicarMinutes("#maps", 1365, 450);
-  nicarMinutes("#statistics", 975, 600);
-  nicarMinutes("#javascript", 810, 400);
-
+  var waypoint = new Waypoint({
+  element: document.getElementById('robospeech'),
+  handler: function(direction) {
+    console.log('Scrolled to waypoint!')
+  $(function(){
+       $("#robospeech").typed({
+         strings: ["It's never too much coding, right?"],
+         typeSpeed: 10
+       });
+   });
+ },
+  offset: "90%"
+})
 
 
   </script>

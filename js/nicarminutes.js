@@ -32,15 +32,20 @@ function nicarMinutes (el,val, height){
     .data(dataset)
     .enter().append("rect")
     .style("fill", "#31cfff")
-    .style("opacity", 1)
+    .style("opacity", 0)
     .attr('width', 2.7)
     .attr('height',2.7)
     .attr("x", function(d,i) { row = (i%elementsInRow == 0) ? i/elementsInRow : row; return ((i+1)-row*elementsInRow) * paddingEl;})
     .attr("y", function(d,i) { row = (i%elementsInRow == 0) ? i/elementsInRow : row; return row * paddingEl;})
 
-   // simple animation on load: opaciy
-  //  circle.transition()
-  //   .duration(5)
-  //   .delay(function(d,i) { return 5 * i; })
-  //   .style("opacity", 1);
+  //  simple animation on load: opaciy
+   circle.transition()
+    .duration(5)
+    .delay(function(d,i) { return 5 * i; })
+    .style("opacity", 1);
 };
+
+nicarMinutes("#python", 2565, 800);
+nicarMinutes("#maps", 1365, 450);
+nicarMinutes("#statistics", 975, 600);
+nicarMinutes("#javascript", 810, 400);

@@ -48,7 +48,7 @@ function ready(error, world, names) {
     d3.transition()
         .duration(1250)
         .each("start", function() {
-          title.text(" from " + countries[i = (i + 1) % n].name);
+          title.text(countries[i = (i + 1) % n].name);
           if (countries[i2 = (i2 + 1) % n].number > 1) {
           participants.text( countries[i2 = (i2 + 0) % n].number + " participants")
         } else { participants.text( countries[i2 = (i2 + 0) % n].number + " participant") }
