@@ -31,7 +31,8 @@ function nicarMinutes (el,val, height){
   var circle = svg.selectAll("rect")
     .data(dataset)
     .enter().append("rect")
-    .style("fill", "#ddd")
+    .style("fill", "#31cfff")
+    .style("opacity", 0)
     .attr('width', 2.7)
     .attr('height',2.7)
     .attr("x", function(d,i) { row = (i%elementsInRow == 0) ? i/elementsInRow : row; return ((i+1)-row*elementsInRow) * paddingEl;})
@@ -39,7 +40,7 @@ function nicarMinutes (el,val, height){
 
    // simple animation on load: opaciy
    circle.transition()
-    .duration(50)
-    .delay(function(d,i) { return 15 * i; })
-    .style("fill", "#31cfff")
+    .duration(5)
+    .delay(function(d,i) { return 5 * i; })
+    .style("opacity", 1);
 };

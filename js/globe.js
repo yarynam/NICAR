@@ -66,7 +66,11 @@ function ready(error, world, names) {
           };
         })
       .transition()
-        .each("end", transition);
+      .each("end", transition);
+      if (i == 21) {
+        i = -1;
+        i2 = -1;
+      }
   })();
 }
 
