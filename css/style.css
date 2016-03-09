@@ -189,7 +189,7 @@ svg {
 
  @media only screen and (min-width : 320px) {
   #main { padding-left: 5%;   padding-right: 5%; }
-  #header{ margin-top: 1.5em;}
+  #header{ margin-top: 0.5em;}
   #main-title {font-size: 4em;}
   .fact {border-left: none; margin-bottom: 7em;}
   .globe {margin-bottom: 7em;}
@@ -197,7 +197,7 @@ svg {
 
   @media only screen and (min-width : 480px) {
     #main { padding-left: 5%;   padding-right: 5%; }
-    #header{ margin-top: 1.5em;}
+    #header{ margin-top: 0.5em;}
     #main-title {font-size: 4em;}
     .fact {border-left: none; margin-bottom: 7em;}
     .globe {margin-bottom: 7em;}

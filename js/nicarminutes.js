@@ -46,6 +46,6 @@ function nicarMinutes (el,val, height){
 };
 
 nicarMinutes("#python", 2565, 800);
-nicarMinutes("#maps", 1365, 450);
-nicarMinutes("#statistics", 975, 600);
+nicarMinutes("#maps", 1365, 430);
+nicarMinutes("#statistics", 975, 450);
 nicarMinutes("#javascript", 810, 400);
