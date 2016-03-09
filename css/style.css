@@ -46,6 +46,7 @@ h4 {
   padding: 5px;
   margin-top: 5px;
   color: #31cfff;
+  cursor: pointer;
 }
 
 .fa-facebook:hover,
