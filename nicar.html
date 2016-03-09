@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>NiCAR 2016</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="header" class="container-fluid">
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 id="main-title"> NICAR 2016  </h1>
+      <h3 class="center"> Nerd Data Journalists Summit</h3>
+      <h4 class="center">| 10.03.2016 - 13.03.2016 |</h4>
+    </div>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="row first-facts">
+      <div class="globe col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div id="globe" width="200" height="200"></div>
+        <div id="participants" class="subtitle"></div>
+        <div id="country" class="subtitle"></div>
+      </div>
+      <div class="fact col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive" src="img/countries.svg"></img>
+        <h2>22</h2>
+        <div class="subtitle"> Countries </div>
+      </div>
+      <div class="fact col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img class="img-responsive" src="img/speaker.svg"></img>
+        <h2>272</h2>
+        <div class="subtitle"> Speakers </div>
+      </div>
+      <div class="fact col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img class="img-responsive" src="img/organization.svg"></img>
+        <h2 class="title-year">468</h2>
+        <div class="subtitle"> Institutions </div>
+      </div>
+  	</div>
+  <div class="row ">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img class="img-responsive" src="img/js.svg"></img>
+      <h2>810</h2>
+      <div class="subtitle"> minutes of Javascript </div>
+      <div id="javascript" class="minutes"> </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img class="img-responsive" src="img/r.svg"></img>
+      <h2>975</h2>
+      <div class="subtitle"> minutes of Statistics </div>
+      <div id="statistics" class="minutes"> </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img class="img-responsive" src="img/map.svg"></img>
+      <h2>1335</h2>
+      <div class="subtitle"> minutes of Maps </div>
+      <div id="maps" class="minutes"> </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img class="img-responsive" src="img/py.svg"></img>
+      <h2>2565</h2>
+      <div class="subtitle"> minutes of Python </div>
+      <div id="python" class="minutes"> </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img class="img-responsive" src="img/botik.svg"></img>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <div class="jr-speechbubble">
+        <span> It's never too much coding, right?</span>
+       </div>
+       <a class="btn" href="http://www.ire.org/conferences/nicar2016/"> Visit NICAR</a>
+    </div>
+	</div>
+</section>
+
+
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/noframework.waypoints.min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="js/facts.js"></script>
+  <script src="js/globe.js"></script>
+  <script src="js/nicarminutes.js"></script>
+
+  <script>
+
+  nicarMinutes("#python", 2565, 800);
+  nicarMinutes("#maps", 1365, 450);
+  nicarMinutes("#statistics", 975, 600);
+  nicarMinutes("#javascript", 810, 400);
+
+
+
+  </script>
+</body>
+</html>
