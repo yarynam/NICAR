@@ -203,6 +203,7 @@ svg {
   #main-title {font-size: 4em;}
   .fact {border-left: none; margin-bottom: 7em;}
   .globe {margin-bottom: 7em;}
+  .btn {position: block; margin: auto;}
   }
 
   @media only screen and (min-width : 480px) {
@@ -211,4 +212,5 @@ svg {
     #main-title {font-size: 4em;}
     .fact {border-left: none; margin-bottom: 7em;}
     .globe {margin-bottom: 7em;}
+    .btn {position: block; margin: auto;}
    }
